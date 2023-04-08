@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    padding:15px
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul, nav li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding:15px;
+    text-decoration: none;
+    color:#000000
+}
+
+
+nav a:hover{
+    color: #008dc1;
+}
+
+.buttom_cont:hover{
+    color: #fff;
+}
+
+.buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #60b578;
+    margin-right: 20px;
+    height: 35px;
+    width: 115px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.buttom_cont{
+    color:#fff;
+    font-size: 14px;
+    justify-items: center;
+    font-weight: bold;
+}
+
+.buttom_dist{
+    padding-right: 30px;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/smartwatch.jpeg);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 650px;
+    width: auto;
+}
+
+.banner_display{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 100px;
+}
+
+.banner_title{
+    display: flex;
+    justify-content: center;
+    font-size: 86px;
+}
+
+.banner_text{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    color: #888888;
+}
+
+.banner_img{
+    display: flex;
+    justify-content: center;
+}
+
+.buttom2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.banner_buttom1{
+    background-color: #008dc1;
+    width: 200px;
+    height: 58px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.banner_buttom2{
+    background-color: #fff;
+    color: #000000;
+    width: 200px;
+    height: 58px;
+    border-radius: 5px;
+}
+
+.banner_buttom1, .banner_buttom2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.banner_buttom1 a{
+    text-decoration:none;
+    color: #ffffff;   
+}
+
+.banner_buttom2 a{
+    text-decoration: none;
+    color:#333333;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    height: 650px
+}
+
+.content_product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 650px;
+}
+
+.product_img{
+    background-image: url(../images/05-Mi-Watch-1-1260x788.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 562px;
+    width: 850px;
+}
+
+
+.product_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    padding: 80px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.txt_title{
+    font-size: 22px;
+}
+
+.txt_subtitle{
+    color:#008dc1;
+    margin-top:-15px;
+}
+
+.txt_content{
+    color:#666666;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color:#000000
+}
+
+#content_aside{
+    background-image: url(../images/10melhores-smartwatch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -85px;
+    height: 600px;  
+}
+
+.content_desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+.desc2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    width: 800px;
+}
+
+.desc_buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color:#fff;
+}
+
+.buttom4{
+    text-align: center;
+    background-color: #008dc1;
+    color:#fff;
+    border-radius:5px ;
+    font-size: 18px;
+    margin-top: 50px;
+    padding: 15px;
+    width:200px;
+}   
+
+.content_aside2{
+    background-color: #dddbdb99;
+    display: flex;
+    justify-content: center;
+    height: 800px;  
+}
+
+
+.desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content_boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1100px;
+    height: auto;
+    margin-top: -80px;
+    margin-left: -20px;
+}
+
+.boxes{
+    margin-top: 100px;
+    width: 300px;
+}
+
+.align_itens{
+    display: flex;
+    flex-direction: row;
+}
+
+.align_itens h3{
+    font-size: 22px;
+}
+
+.boxe_txt{
+    margin-left: 74px;
+    margin-top:-15px;
+    color: #666666;
+    font-size: 16px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 240px;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_desc{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.icons_img{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.footer_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    color: #535353;
+}
+
+.txt_footer1{
+    margin-bottom: 10px;
+}
+
+
+
