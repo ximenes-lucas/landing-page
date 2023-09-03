@@ -9,7 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/k-logo-dark.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/7374905180.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu_mobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {/*Se o menu do cabeçalho tiver aparecendo (ou seja, ainda tem espaço para aparecer o menu) ele não aparece*/
+                    document.querySelector(".menu nav ul").style.display = 'none';/*Não aparece*/
+            } else {
+                document.querySelector(".menu nav ul").style.display = 'flex';/*aparece*/
+            }
+            });
+        };
+    </script>
+</head>
+<body>
     <header>
         <div class="container">
             <div class="logo">
@@ -18,6 +32,11 @@
 
             <div class="menu">
                 <nav>
+                    <div class="menu_mobile">
+                        <div class="mn_line"></div>
+                        <div class="mn_line"></div>
+                        <div class="mn_line"></div>
+                    </div>
                     <ul>
                         <li><a href="">Overviews</a></li>
                         <li><a href="">Feature</a></li>
@@ -29,13 +48,16 @@
                             <div class="buttom_div"><li><a class="buttom_cont" href="">Pre order</a></li></div>
                         </div>
                     </ul>
+                    <div class="buttom responsive">
+                        <div class="buttom_div"><li><a class="buttom_cont" href="">Pre order</a></li></div>
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
 
     <section id="banner">
-        <div class="container">
+        <div class="container-banner">
             <div class="banner_display">
                 <div class="banner_img">
                     <div class="image">
@@ -69,140 +91,133 @@
         </div>
     </section>
 
-    <section id="content">
-        <div class="container">
-            <div class="content_product">
-                <div class="product_img"></div>
+    <section class="content_product">
+        <div class="product_img"></div>
 
-                <div class="product_txt">
-                    <div class="txt_title">
-                        <h2>These days you can invent a product, start a blog, sell shit online.</h2>
-                    </div>
-
-                    <div class="txt_subtitle">
-                        <h3>But if you're a Developer, you're gonna need to start with just ONE APP.</h3>
-                    </div>
-
-                    <div class="txt_content">
-                        <p>
-                            And if it's real enough and honest enough, and if it's made of everything it's made you, 
-                            where you come from, who you knew, your history, then you may have a chance at connecting with everyone else. 
-                            And maybe that's your ticket to everything.
-                        </p>
-
-                        <p>
-                            <a href="index.html" target="_blank">&#9654; &nbsp; Find out for more</a>
-                        </p>
-                    </div> 
-                </div>
+        <div class="product_txt">
+            <div class="txt_title">
+                <h2>These days you can invent a product, start a blog, sell shit online.</h2>
             </div>
-        </div>
 
+            <div class="txt_subtitle">
+                <h3>But if you're a Developer, you're gonna need to start with just ONE APP.</h3>
+            </div>
+
+            <div class="txt_content">
+                <p>
+                    And if it's real enough and honest enough, and if it's made of everything it's made you, 
+                    where you come from, who you knew, your history, then you may have a chance at connecting with everyone else. 
+                    And maybe that's your ticket to everything.
+                </p>
+
+                <p>
+                    <a href="index.html" target="_blank">&#9654; &nbsp; Find out for more</a>
+                </p>
+            </div> 
+        </div>
     </section>
 
     <section id="content_aside">
-        <div class="content_desc">
-            <div class="content_info">
-                <div class="desc">
-                    <div><h2>Track your health. Start with your heart.</h2></div>
-                </div>
+        <div class="content_info">
+            <div class="desc">
+                <h2>Track your health. Start with your heart.</h2>
+            </div>
 
-                <div class="desc2">
-                    <div>Measures your heart rate throughout the day when you're still. You can see these background heart rate measurements in the Health app on your Phone.</div>
-                </div>
+            <div class="desc2">
+                Measures your heart rate throughout the day when you're still. You can see these background  heart rate  measurements in the Health app on your Phone.
+            </div>
 
-                <div class="desc_buttom">
-                    <a class="desc_but" href="">
-                        <div class="buttom4">Purchase</div>
-                    </a>
-                </div>
+            <div class="desc_buttom">
+                <a class="desc_but" href="">
+                    <div class="buttom4">Purchase</div>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="content_aside2">
-        <div class="content_desc">
-            <div class="content_info">
-                <div class="content_boxes">
-                    <div class="boxes">
-                        <div class="align_itens">
-                            <div class="boxe_image"><img src="./assets/images/icon1.png" alt=""></div>
-                            <div><h3>&nbsp; &nbsp; Responsive & Retina</h3></div>
-                       </div>
-
-                        <div class="boxe_txt">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            </p>
-                        </div>    
+            <div class="content_boxes">
+                <div class="boxes">
+                    <div class="align_itens">
+                        <div class="boxe_image"><img src="./assets/images/icon1.png" alt=""></div>
+                        <div><h3>&nbsp; &nbsp; Responsive & Retina</h3></div>
                     </div>
 
-                    <div class="boxes">
-                        <div class="align_itens">
-                             <div class="boxe_image"><img src="./assets/images/icon2.png" alt=""></div>
-                            <div><h3>&nbsp; &nbsp; Visual Page Builder</h3></div>
-                        </div>
+                    <div class="boxe_txt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        </p>
+                    </div>    
+                </div>
+
+                <div class="boxes">
+                    <div class="align_itens">
+                        <div class="boxe_image"><img src="./assets/images/icon2.png" alt=""></div>
+                        <div><h3>&nbsp; &nbsp; Visual Page Builder</h3></div>
+                    </div>
                        
-                        <div class="boxe_txt">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            </p>
-                        </div>    
+                    <div class="boxe_txt">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        </p>
+                    </div>    
+                </div>
+
+                <div class="boxes">
+                    <div class="align_itens">
+                        <div class="boxe_image"><img src="./assets/images/icon3.png" alt=""></div>
+                        <div><h3>&nbsp; &nbsp; Powerful design tool</h3></div>
                     </div>
 
-                    <div class="boxes">
-                        <div class="align_itens">
-                            <div class="boxe_image"><img src="./assets/images/icon3.png" alt=""></div>
-                            <div><h3>&nbsp; &nbsp; Powerful design tool</h3></div>
-                       </div>
+                    <div class="boxe_txt">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        </p>
+                    </div>    
+                </div>
 
-                        <div class="boxe_txt">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            </p>
-                        </div>    
+                <div class="boxes">
+                    <div class="align_itens">
+                        <div class="boxe_image"><img src="./assets/images/icon4.png" alt=""></div>
+                        <div><h3>&nbsp; &nbsp; 150+ Page builder <br> <span>Elemens</span></h3></div>
                     </div>
 
-                    <div class="boxes">
-                        <div class="align_itens">
-                            <div class="boxe_image"><img src="./assets/images/icon4.png" alt=""></div>
-                            <div><h3>&nbsp; &nbsp; Responsive & Retina</h3></div>
-                       </div>
+                    <div class="boxe_txt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        </p>
+                    </div>    
+                </div>
 
-                        <div class="boxe_txt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            </p>
-                        </div>    
+                <div class="boxes">
+                    <div class="align_itens">
+                        <div class="boxe_image"><img src="./assets/images/icon5.png" alt=""></div>
+                        <div><h3>&nbsp; &nbsp; Import / export <span class="align_center">designs</span></h3></div>
                     </div>
+                    <div class="boxe_txt">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        </p>
+                    </div>    
+                </div>
+                
 
-                    <div class="boxes">
-                         <div class="align_itens">
-                            <div class="boxe_image"><img src="./assets/images/icon5.png" alt=""></div>
-                            <div><h3>&nbsp; &nbsp; Responsive & Retina</h3></div>
-                       </div>
-                        <div class="boxe_txt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            </p>
-                        </div>    
+                <div class="boxes">
+                    <div class="align_itens">
+                        <div class="boxe_image"><img src="./assets/images/icon6.png" alt=""></div>
+                        <div><h3>&nbsp; &nbsp; Professional Support</h3></div>
                     </div>
-
-                    <div class="boxes">
-                        <div class="align_itens">
-                            <div class="boxe_image"><img src="./assets/images/icon6.png" alt=""></div>
-                            <div><h3>&nbsp; &nbsp; Responsive & Retina</h3></div>
-                       </div>
                        
-                        <div class="boxe_txt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            </p>
-                        </div>    
-                    </div>
+                    <div class="boxe_txt">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        </p>
+                    </div>    
                 </div>
             </div>
-        </div>
-
     </section>
 
     <footer>
@@ -214,7 +229,7 @@
                    </div>
 
                    <div class="icons_img">
-                       <a href="https://www.instagram.com/_ximenes_lucas/" target="_blank"><i class="fab fa-instagram fa-xl"></i></a>
+                       <a href="https://www.instagram.com/ximenes.lucas_/" target="_blank"><i class="fab fa-instagram fa-xl"></i></a>
                    </div>
 
                    <div class="icons_img">
